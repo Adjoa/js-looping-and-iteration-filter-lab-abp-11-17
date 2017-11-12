@@ -23,7 +23,8 @@ function fuzzyMatch(drivers, startLetters) {
 //fuzzyMatch(drivers, 'Sa')
 
 function matchName(drivers, name) {
-  return drivers.filter(function driver) {
+  //return drivers.filter(function driver) {
+  //  for(name in drivers)
     //return driver.toLowerCase() === name.toLowerCase();
-  }
+  //}
 }
