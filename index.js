@@ -1,10 +1,10 @@
 // Code your solution in this file
 
-function filterItems(query) {
+/*function filterItems(query) {
   return fruits.filter(function(el) {
       return el.toLowerCase().indexOf(query.toLowerCase()) > -1;
   })
-}
+}*/
 
 function findMatching(drivers, name) {
     return drivers.filter(function(driver) {
@@ -12,7 +12,7 @@ function findMatching(drivers, name) {
     })
 }
 
-drivers = ['Bobby', 'Sammy', 'Sally', 'Annette', 'Sarah', 'bobby']
+//drivers = ['Bobby', 'Sammy', 'Sally', 'Annette', 'Sarah', 'bobby']
 
 function fuzzyMatch(drivers, startLetters) {
   return drivers.filter(function(driver) {
@@ -20,4 +20,10 @@ function fuzzyMatch(drivers, startLetters) {
   })
 }
 
-fuzzyMatch(drivers, 'Sa')
+//fuzzyMatch(drivers, 'Sa')
+
+function matchName(drivers, name) {
+  return drivers.filter(function driver) {
+    return driver.toLowerCase() === name.toLowerCase();
+  }
+}
