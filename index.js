@@ -12,8 +12,12 @@ function findMatching(drivers, name) {
     })
 }
 
+//drivers = ['Bobby', 'Sammy', 'Sally', 'Annette', 'Sarah', 'bobby']
+
 function fuzzyMatch(drivers, startLetters) {
   return drivers.filter(function(driver) {
-    return driver.toLowerCase().indexOf(startLetters.toLowerCase(), 0) > -1;
+    return driver.toLowerCase().slice(0, startLetters.length -1) === startLetters.toLowerCase();
   })
 }
+
+//fuzzyMatch(drivers, 'Sa')
